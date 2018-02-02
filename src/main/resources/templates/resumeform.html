@@ -13,10 +13,12 @@
     email: <input type="text" th:field="*{email}" />
 
     <H4>Education</H4>
+
     school: <input type="text" th:field="*{school}" /><br />
     Degree: <input type="text" th:field="*{degree}" /><br />
     year:<input type="text" th:field="*{year}" /><br />
     <h4>Experience</h4>
+
     Job title: <input type="text" th:field="*{jobtitle}" /><br />
     Company:  <input type="text" th:field="*{company}" /><br />
     From(month/year):<input type="text" th:field="*{beginyear}" /><br />
@@ -24,7 +26,9 @@
     Duties:<br/><textarea  rows="10" cols="70" th:field="*{duties}"/>
 
     <h4>skills</h4>
-    Skills: <input type="text" th:field="*{skill}" /><br />
+
+    Skill: <input type="text" th:field="*{skill}" /><br />
+    rating(1-5): <input type="number" th:field="*{rating}" /><br />
     <input type="submit" value="Submit"/>
 </form>
 

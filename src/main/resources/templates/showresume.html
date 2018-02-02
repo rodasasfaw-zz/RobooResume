@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<p th:inline="text"> [[${resume.firstname}]]  [[${resume.lastname}]] <br />
+    <!--[[]]-->
+    [[${resume.email}]]
+
+    <h4> Education</h4>
+
+[[${resume.school}]]<br />
+[[${resume.degree}]], [[${resume.year}]]<br />
+
+<h4>Experience</h4>
+
+[[${resume.jobtitle}]]<br />
+[[${resume.company}]] [[${resume.beginyear}]]- [[${resume.endyear}]]<br/>
+Duties: [[${resume.duties}]]<br />
+
+
+<h4>Skills</h4>
+
+[[${resume.skill}]] - [[${resume.rating}]]<br />
+
+
+</p>
+
+</body>
+</html>
